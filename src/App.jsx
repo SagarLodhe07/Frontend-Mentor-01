@@ -10,16 +10,18 @@ const App = () => {
   };
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={<Homepage darkmode={darkmode} toggleMode={toggleMode} />}
-      />
-      <Route
-        path="/info"
-        element={<CountryInfo darkmode={darkmode} toggleMode={toggleMode} />}
-      />
-    </Routes>
+    <div className="w-full min-h-screen bg-red-600">
+      <Routes>
+        <Route
+          path="/"
+          element={<Homepage darkmode={darkmode} toggleMode={toggleMode} />}
+        />
+        <Route
+          path="/info"
+          element={<CountryInfo darkmode={darkmode} toggleMode={toggleMode} />}
+        />
+      </Routes>
+    </div>
   );
 };
 

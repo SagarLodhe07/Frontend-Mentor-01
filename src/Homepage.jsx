@@ -54,17 +54,17 @@ const Homepage = ({toggleMode ,darkmode}) => {
   };
   return (
     <div
-      className={`w-full min-h-screen select-none ${
+      className={`h-full select-none p-10 ${
         darkmode ? "bg-[#202c37] text-white" : "bg-[#fafafa]"
       }`}
     >
-      <div className="bg-red-400 sticky top-0 bg-transparent">
+      <div className="bg-red-400 sticky top-10 bg-transparent">
         {/* Nav */}
 
         <Navbar darkmode={darkmode} toggleMode={toggleMode} />
 
         {/* Search And Select Tag */}
-        <div className="flex justify-between p-8 items-center">
+        <div className="flex justify-between py-8 items-center">
           <div
             className={`flex justify-start items-center gap-3 p-4 w-96 h-16 shadow-xl rounded-md ${
               darkmode ? "bg-[#2b3945]" : "bg-[#fafafa]"
